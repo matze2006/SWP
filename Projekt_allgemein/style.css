@@ -1,0 +1,30 @@
+/* Element Selector */
+
+/* id selector */
+
+#header{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#image{
+    float: right;
+    margin: 0 0 5px 5px;
+    width: 350px;
+    height: 300px;
+}
+
+.subtitle-container{
+    display: flex;                  /* Unterüberschriften nebeneinander anordnen */
+    gap: 20px;                      /* Abstand zwischen den Unterüberschriften */
+    margin-bottom: 20px;            /* Abstand zum folgenden Text */
+    margin-left: 20px;
+}
+
+.subtitle {
+    flex: 1;                 /* Gleichmäßige Verteilung des verfügbaren Platzes */
+}
+
+
+
