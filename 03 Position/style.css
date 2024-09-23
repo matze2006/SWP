@@ -1,0 +1,23 @@
+.div123{
+    border-style: solid;
+    height:100px;
+}
+
+#div1{
+    background-color: red;
+    position: relative;
+    top:300px;
+}
+
+#div2{
+    background-color: aqua;
+    width:100px;
+    position: absolute;
+    bottom: 0px
+}
+
+#div3{
+    background-color: blue;
+    width:100px;
+    position: fixed;
+}

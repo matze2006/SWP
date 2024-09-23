@@ -23,5 +23,11 @@
     flex: 1;                 /* Gleichmäßige Verteilung des verfügbaren Platzes */
 }
 
+.unten{
+    background-color: blue;
+    width: 95pc;
+    position: fixed;
+    bottom:0px;
+}
 
 
