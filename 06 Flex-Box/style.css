@@ -1,0 +1,48 @@
+.box{
+    background-color: red;
+    width:100px;
+    height:100px;
+    margin:5px;
+    text-align: center;
+}
+
+.container{
+    background-color: green;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*Verschiebt in die Mitter von links und rechts*/
+    align-items: center; /*Verschiebt in die Mitte von oben nach unten*/
+}
+
+.box2{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    margin: 10px
+}
+
+.container2{
+    background-color: yellow;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: start;
+}
+
+.box3{
+    background-color: orange;
+    width: 75px;
+    height: 75px;
+    margin: 15px;
+}
+
+.container3{
+    background-color: aqua;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+}

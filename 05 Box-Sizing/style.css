@@ -1,0 +1,30 @@
+div{
+    height:100px;
+    width:100px;
+    background-color: red;
+    border-style: solid;
+}
+
+.eins{
+    box-sizing: border-box; /*Größe der Box fixieren*/
+}
+
+.zwei{
+    box-sizing: content-box;
+}
+
+#eins{
+    padding:10px;
+}
+
+#zwei{
+    padding:20px;
+}
+
+#drei{
+    padding:10px;
+}
+
+#Hallo{
+    padding:20px;
+}
