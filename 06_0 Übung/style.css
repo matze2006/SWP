@@ -25,14 +25,25 @@
     position: absolute;
 }
 
-.zwei{
-
-}
-
 .drei{
     bottom: 0px;
     right: 0px;
-    length: 50px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: orange;
+}
+
+.vier{
+    bottom: 0px;
+    right: 0px;
+    height: 50px;
     width: 50px;
     border-style: solid;
+    position: absolute;
+}
+
+.title{
+    margin-top: 20px;
+    margin-left: 20px;
 }
