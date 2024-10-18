@@ -1,0 +1,58 @@
+.box1{
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 400px;
+    width: 400px;
+}
+
+.feld1{
+    border-style: solid;
+    border-width: 1px;
+    background-color: green;
+    height: 300px;
+    width: 200px;
+}
+
+.feld2{
+    border-style: solid;
+    border-width: 1px;
+    background-color: orange;
+    height: 100px;
+    width: 400px;
+}
+
+.feld3{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+}
+
+.box2{
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 100px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.feld4{
+    border-style: solid;
+    border-width: 1px;
+    background-color: orange;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
