@@ -9,14 +9,24 @@
     border-style: solid;
     border-width: 1px;
     height: 650px;
-    width: 650px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 105px 100px;
+    column-gap: 5px;
+    row-gap: 20px;
 }
 
 .box3{
     border-style: solid;
     border-width: 1px;
     height: 650px;
-    width: 650px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto auto;
+    column-gap: 5px;
+    row-gap: 20px;
 }
 
 .box_k{
@@ -24,7 +34,9 @@
     border-width: 1px;
     width: 100px;
     height: 100px;
-    display: grid;
+    margin: 10px;
+    margin-left: 50px;
+    background-color: lime;
 }
 
 .box_g{
@@ -32,6 +44,8 @@
     border-width: 1px;
     width: 250px;
     height: 250px;
-    display: grid;
+    margin: 10px;
+    margin-left: 30px;
+    background-color: lime;
 }
 
