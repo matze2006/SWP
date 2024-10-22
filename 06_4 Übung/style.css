@@ -4,10 +4,15 @@
     border-style: solid;
     border-width: 1px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .feld{
-
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
 }
 
 .box{
@@ -15,4 +20,25 @@
     width: 30px;
     border-style: solid;
     border-width: 1px;
+    margin: 5px;
+    background-color: white;
+}
+
+.box2{
+    border-style: solid;
+    border-width: 1px;
+    height: 300px;
+    width: 300px;
+    background-color: green;
+}
+
+.box3{
+    border-style: solid;
+    border-width: 1px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: purple;
 }
