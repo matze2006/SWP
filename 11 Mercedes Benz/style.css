@@ -55,7 +55,6 @@ table {
 	align-content: center;
 	border-style: solid;
 	border-width: 1px;
-	border-color: green;
     height: 85px;
     background-color: black;
 }
@@ -66,7 +65,6 @@ table {
 
 .auswahl{
 	border-style: solid;
-	border-color: red;
 	border-width: 1px;
     display: flex;
 	align-items: center;
@@ -78,22 +76,45 @@ table {
 .logo{
 	align-self: center;
 	border-style: solid;
-	border-color: blue;
 	border-width: 1px;
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 }
 
 .info{
 	border-style: solid;
-	border-color: purple;
 	border-width: 1px;
 	height: 85px;
-	width: 400px;
+	width: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: 110px;
 }
 
 .mercedes{
 	border-style: solid;
 	border-color: orange;
 	border-width: 1px;
+}
+
+.image{
+	height: 25px;
+	width: 25px;
+}
+
+.login{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: gray;
+}
+
+.text2{
+	margin-left: 5px;
+}
+
+.autos{
+	width: 100%;
+	height: 100%;
 }
