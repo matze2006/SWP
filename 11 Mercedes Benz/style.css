@@ -53,8 +53,6 @@ table {
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
-	border-style: solid;
-	border-width: 1px;
     height: 85px;
     background-color: black;
 }
@@ -64,8 +62,6 @@ table {
 }
 
 .auswahl{
-	border-style: solid;
-	border-width: 1px;
     display: flex;
 	align-items: center;
 	height: 85px;
@@ -82,8 +78,6 @@ table {
 }
 
 .info{
-	border-style: solid;
-	border-width: 1px;
 	height: 85px;
 	width: 280px;
 	display: flex;
@@ -93,9 +87,7 @@ table {
 }
 
 .mercedes{
-	border-style: solid;
-	border-color: orange;
-	border-width: 1px;
+	position: relative;
 }
 
 .image{
@@ -117,4 +109,85 @@ table {
 .autos{
 	width: 100%;
 	height: 100%;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0) 50%);
+}
+.overlay2{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 50%);
+}
+
+.text-box{
+	position: absolute;
+	height: 300px;
+	width: 500px;
+	margin-left: 110px;
+	margin-top: 220px;
+}
+
+.t1{
+	font-size: 60px;
+}
+
+.t2{
+	margin-top: 50px;
+	font-size: 18px;
+}
+
+.box{
+	height: 70px;
+	margin-top: 80px;
+	display: flex;
+}
+
+.b1{
+	display: flex;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	height: 50px;
+	width: 170px;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 18px;
+	border-radius: 1px;
+}
+
+.b2{
+	display: flex;
+	background-color: rgb(0, 106, 255);
+	height: 50px;
+	width: 220px;
+	margin-left: 10px;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	color: white;
+	font-size: 18px;
+	border-radius: 1px;
+}
+
+.chat{
+	position: fixed;
+	height: 60px;
+	width: 60px;
+	bottom: 0;
+    right: 0;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	border-radius: 10px;
 }
