@@ -33,4 +33,4 @@ console.log("Aufgabe 2");
 let firstname = "Matthias";
 let lastname = "Hagen";
 
-console.log(firstname + " " + lastname);
+console.log("Ich heiße " + firstname + " " + lastname);
