@@ -1,0 +1,39 @@
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    padding: 10px; 
+}
+
+#field1{
+    margin: 10px;
+    width: 200px;
+}
+
+#field2{
+    margin: 10px;
+    width: 200px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 300px;
+}
+
+#output
+{
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
