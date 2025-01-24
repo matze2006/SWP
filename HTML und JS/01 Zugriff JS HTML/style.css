@@ -1,0 +1,50 @@
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.rechner{
+    display: flex;
+    justify-content: center;
+}
+
+#value1{
+    width: 150px;
+}
+
+#value2{
+    width: 150px;
+}
+
+.auswahl{
+    display: flex;
+    justify-content: center;
+}
+
+#Addieren{
+    margin: 5px;
+}
+
+#Subtrahieren{
+    margin: 5px;
+}
+
+#Multiplizieren{
+    margin: 5px;
+}
+
+#Dividieren{
+    margin: 5px;
+}
+
+#Lösung{
+    display: flex;
+    justify-content: center;
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
