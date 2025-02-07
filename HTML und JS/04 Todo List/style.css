@@ -1,0 +1,23 @@
+.task{
+    border-style: solid;
+    width: 300px;
+    margin: 5px;
+}
+
+.tasks{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    row-gap: 10px;
+}
+
+h1{
+    justify-self: center;
+}
+
+input{
+    display: flex;
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+
