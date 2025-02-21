@@ -9,9 +9,11 @@ const loadData = ()=>{
 
 const fillTable = (data)=>{
     let html = "";
+    let position = 0;
 
     data.forEach(element => {
-        html += "<div>" + "<img src='" + element.teamIconUrl + "'>" + element.teamName + element.points + "</div>";
+        html += "<div>" + position + "." + "<img src='" + element.teamIconUrl + "' width='50' height='50'>" + element.teamName + element.points + "</div>";
+        position++;
     });
     document.getElementById("output").innerHTML=html;
 }
