@@ -9,10 +9,14 @@ const loadData = ()=>{
 
 const fillTable = (data)=>{
     let html = "";
-    let position = 0;
+    let position = 1;
 
     data.forEach(element => {
-        html += "<div>" + position + "." + "<img src='" + element.teamIconUrl + "' width='50' height='50'>" + element.teamName + element.points + "</div>";
+        html += "<div class='flex m-10 border items-center'>";
+        html += "<div class=''>" + position + "." + "</div>";
+        html += "<div class='w-20 h-20 ml-20'>" + "<img src='" + element.teamIconUrl + "'>" + "</div>";
+        html += "<div class='ml-20'>" + element.teamName + "</div>";
+        html += "</div>"
         position++;
     });
     document.getElementById("output").innerHTML=html;
