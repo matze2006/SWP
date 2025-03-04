@@ -9,13 +9,11 @@ const loadData = () => {
 }
 
 const fillTable = (data) => {
-    let html = "";
+    let html = "<div id='table'>";
     let position = 1;
 
-    html += "<div id='table'>"
-
     data.forEach(element => {
-        html += "<div id='" + element.teamInfoId + "' class='flex border items-center mb-10'>";
+        html += "<div data-teamId='  " + element.teamInfoId + "' class='flex items-center mb-10'>";
         html += "<div class='ml-10'>" + position + "." + "</div>";
         html += "<div class='w-20 h-20 ml-20'>" + "<img src='" + element.teamIconUrl + "'>" + "</div>";
         html += "<div class='ml-20'>" + element.teamName + "</div>";
@@ -27,7 +25,24 @@ const fillTable = (data) => {
     
     //Team anzeigen
     document.getElementById("table").addEventListener("click", (event) => {
-        alert("clicked");
+        let selectedTeamId = event.target.getAttribute("data-teamId");
+        console.log("selectedTeamId", selectedTeamId);
+        lastgame(selectedTeamId);
+    });
+}
+
+function lastgame(teamId){
+    console.log("inside get next match");
+    const url =`https://api.openligadb.de/getlastmatchbyleagueteam/4608/${teamId}`
+    fetch(url)
+    .then((response) => response.json())
+    .then((json) =>{
+        console.log(json);
+        let html = "<div id='lastgame'>";
+        html += "<div class='text-2xl mb-3'>Letztes Spiel in der Saison 2023/2024</div>"
+        html += `<div class=''>${json.team1.teamName} Vs ${json.team2.teamName}</div>`;
+        html += "</div>";
+        document.getElementById("lastgame").innerHTML = html;
     });
 }
 
