@@ -9,7 +9,7 @@ const loadData = () => {
 }
 
 const fillTable = (data) => {
-    let html = "<div id='table'>";
+    let html = "<div id='table' >";
     let position = 1;
 
     data.forEach(element => {
