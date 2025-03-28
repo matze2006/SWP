@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Card from './../3_Demo_Projekt_Cards_und_Daten/Card'
+import { Link } from 'react-router';
 
 export default function PeopleContainer() {
   const [people, setPeople] = useState([]);
@@ -26,8 +27,14 @@ export default function PeopleContainer() {
         <input className="border m-5" type="text" placeholder="Search" onChange={(el) =>{
           filterPeople(el.target.value);
         }}/>
+        <div className='border m-5 w-fit'>
+          <Link to="/useState">UseState</Link>
+        </div>
+        <div className='border m-5 w-fit'>
+          <Link to="/">Start</Link>
+        </div>
       </div>
-      <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 pt-30'>
+      <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 pt-60'>
         {filteredPeople.map(person => {
           return <Card name={person.name} image={person.avatar} title={person.jobtitle}/>
         })}

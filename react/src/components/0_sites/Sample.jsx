@@ -3,10 +3,17 @@ import Card from './../1_Setup_React_Tailwind_erste_Komponente/Card.jsx'
 import Liste from './../2_Aufgabe_Komponenten/Liste.jsx'
 import Button from './../2_Aufgabe_Komponenten/Button.jsx'
 import Cards from './../2_Aufgabe_Komponenten/Card.jsx'
+import { Link } from 'react-router'
 
 export default function Sample() {
   return (
     <>
+    <div className='border m-5 w-fit'>
+          <Link to="/PeopleContainer">PeopleContainer</Link>
+        </div>
+        <div className='border m-5 w-fit'>
+          <Link to="/useState">UseState</Link>
+        </div>
     {/*1*/}
     <div className="flex">
       <Card name={"Lenz"} jobtitle={"AV"} description={"lässig"}/>
