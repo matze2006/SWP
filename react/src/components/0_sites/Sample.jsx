@@ -3,9 +3,11 @@ import Card from './../1_Setup_React_Tailwind_erste_Komponente/Card.jsx'
 import Liste from './../2_Aufgabe_Komponenten/Liste.jsx'
 import Button from './../2_Aufgabe_Komponenten/Button.jsx'
 import Cards from './../2_Aufgabe_Komponenten/Card.jsx'
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router'
 
 export default function Sample() {
+  const location = useLocation();
+  const person = location.state.person;
   return (
     <>
     <div className='border m-5 w-fit'>
@@ -32,8 +34,9 @@ export default function Sample() {
       <Cards Name={"John Doe"} Text={"Architect and Engineer"} image={"https://www.w3schools.com/howto/img_avatar.png"}/>
       <Cards Name={"John Doe"} Text={"Architect and Engineer"} image={"https://picsum.photos/200/300"}/>
       <Cards Name={"John Doe"} Text={"Architect and Engineer"} image={"https://picsum.photos/200/300"}/>
-   
     </div>
+
+    <div>Hello {person.firstname}</div>
     
   </>
   )

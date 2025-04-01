@@ -7,7 +7,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import PeopleContainer from "./components/0_sites/PeopleContainer";
 import Sample from "./components/0_sites/Sample";
-import useState from "./components/0_sites/UseState";
+
 import UseState from "./components/0_sites/UseState";
 
 const router = createBrowserRouter([
